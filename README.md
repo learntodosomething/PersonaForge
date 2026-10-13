@@ -151,4 +151,87 @@ No license has been selected yet. Until a license is added, the repository shoul
 
 **PersonaForge** — conversation archives in, configurable AI personas out.
 
+
+## 📥 How to Export Your Messenger Conversations
+
+PersonaForge uses conversation exports provided by Meta. Follow the steps below to download your Messenger messages in JSON format.
+
+### Step 1 — Open Meta Accounts Center
+
+1. Log in to your Facebook account.
+2. Open [Facebook Accounts Center](https://accountscenter.facebook.com/).
+3. Navigate to **Your information and permissions**.
+4. Select **Export your information** or **Download your information**.
+
+> Meta may change menu names or layouts over time. If you cannot find the option, use the official [Facebook Help Center guide](https://www.facebook.com/help/212802592074644).
+
+### Step 2 — Create an export
+
+1. Select your Facebook account.
+2. Choose the option to export or download information to your device.
+3. Select the option to customize the information you want to export, if available.
+4. Choose **Messages** as the information category.
+5. Set the date range to **All time** to include the entire available conversation history.
+
+### Step 3 — Configure the export
+
+Use the following settings:
+
+| Setting | Recommended value |
+|---|---|
+| Destination | Download to device |
+| Information category | Messages |
+| Date range | All time |
+| Format | JSON |
+| Media quality | High, if media is needed |
+
+**Why JSON?** JSON is structured data that software can parse. HTML exports are intended primarily for viewing and are not the recommended format for this workflow.
+
+If you only want to analyze text messages, you may not need to include media files.
+
+### Step 4 — Request and download your archive
+
+1. Confirm your export settings and create the export.
+2. Wait while Meta prepares your archive. This may take some time, depending on the amount of data.
+3. Return to the export page when the archive is ready.
+4. Download the ZIP file.
+5. Extract the ZIP file to a folder on your computer.
+
+You may need to re-enter your password or complete an additional security check.
+
+### Step 5 — Locate your Messenger files
+
+Inside the extracted archive, look for a folder related to messages, usually named `messages`.
+
+Conversation files are commonly organized into subfolders, often under a structure similar to:
+
+```text
+your-export/
+└── messages/
+    └── inbox/
+        └── conversation_name/
+            ├── message_1.json
+            ├── message_2.json
+            └── ...
+```
+
+The exact folder structure and filenames may vary. Some conversations are split across multiple JSON files.
+
+Keep the original archive as a backup. PersonaForge will provide instructions for importing the appropriate files once its import feature is implemented.
+
+### Privacy and security
+
+- Only import conversations you are authorized to use.
+- Consider the privacy of everyone included in the conversation, and obtain consent where appropriate before creating or sharing a persona based on another person.
+- Keep your downloaded archive private and do not commit it to GitHub.
+- Do not upload private conversations to third-party AI services unless you understand and accept how the data will be processed.
+- Delete local exports when you no longer need them.
+
+**Note:** Exporting your messages does not guarantee that every historical message or attachment will be available. Availability can depend on the account, conversation, and Meta's current export behavior.
+
+---
+
+**Ready to create your first persona?** Once the import feature is available, you will be able to upload your export, select a conversation participant, and create an AI persona from the available messages.
+
+
 </div>
