@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# User data — never commit private conversation exports
+data/
+uploads/
+exports/
+conversations/
+*.zip
+*.jsonl
+*.sqlite
+*.db
+*.parquet
+
+# Frontend
+node_modules/
+dist/
+build/
+coverage/
+.next/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
