@@ -1,0 +1,11 @@
+{
+  "participants": [{"name": "Alice Example"}, {"name": "Bob Example"}],
+  "title": "Synthetic chat",
+  "thread_path": "inbox/synthetic_1",
+  "messages": [
+    {"sender_name": "Bob Example", "timestamp_ms": 1700000300000, "content": "Szia! Hogy vagy? 😊", "type": "Generic"},
+    {"sender_name": "Alice Example", "timestamp_ms": 1700000200000, "photos": [{"uri": "x.jpg"}], "type": "Generic"},
+    {"sender_name": "Alice Example", "timestamp_ms": 1700000100000, "content": "Hello Bob", "type": "Generic"},
+    {"sender_name": "Bob Example", "timestamp_ms": 1700000000000, "call_duration": 60, "type": "Call"}
+  ]
+}

@@ -111,8 +111,8 @@ Once the backend dependency file is added, install dependencies and run the deve
 
 ## Roadmap
 
-- [ ] **Phase 1 — Foundation:** project structure, schema design, Messenger JSON parser, validation, and test fixtures.
-- [ ] **Phase 2 — Personality profiling:** analyze style, tone, vocabulary, punctuation, and emoji patterns.
+- [x] **Phase 1 — Foundation:** project structure, schema design, Messenger JSON parser, validation, and test fixtures.
+- [x] **Phase 2 — Personality profiling:** analyze style, tone, vocabulary, punctuation, and emoji patterns.
 - [ ] **Phase 3 — Memory (RAG):** index authorized messages and retrieve relevant examples for a prompt.
 - [ ] **Phase 4 — Persona chat:** implement chat sessions, context management, and model-provider abstraction.
 - [ ] **Phase 5 — Web experience:** upload flow, participant selection, persona management, chat UI, and deletion controls.

@@ -1,14 +1,13 @@
 # Frontend
 
-Planned React + TypeScript web interface.
+React + TypeScript (Vite). Phase 1 UI: upload `message_*.json` files, review the import report,
+choose the speaker, delete the import.
 
-Initial screens:
-1. Welcome / privacy notice
-2. Import conversation export
-3. Import validation and progress
-4. Participant selection
-5. Persona profile review
-6. Chat workspace
-7. Persona and data management
+```bash
+cd frontend
+npm install
+npm run dev        # http://localhost:5173  (backend must run on 127.0.0.1:8000)
+npm run build      # type-check + production build
+```
 
-Do not include real private conversations in demo content or screenshots.
+Set `VITE_API_URL` in `frontend/.env.local` if the backend runs elsewhere.

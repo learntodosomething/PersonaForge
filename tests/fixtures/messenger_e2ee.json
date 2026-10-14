@@ -1,0 +1,14 @@
+{
+  "participants": ["Alice Example", "Bob Example"],
+  "threadName": "Synthetic chat_10",
+  "messages": [
+    {"isUnsent": false, "media": [], "reactions": [], "senderName": "Alice Example",
+     "text": "jó reggelt ❤️", "timestamp": 1706957309084, "type": "text"},
+    {"isUnsent": false, "media": [{"uri": "x.jpg"}], "reactions": [], "senderName": "Bob Example",
+     "text": "", "timestamp": 1706957409084, "type": "image"},
+    {"isUnsent": true, "media": [], "reactions": [], "senderName": "Bob Example",
+     "text": "", "timestamp": 1706957509084, "type": "text"},
+    {"isUnsent": false, "media": [], "reactions": [], "senderName": "Bob Example",
+     "text": "Boop boop ❤️", "timestamp": 1706959376425, "type": "text"}
+  ]
+}

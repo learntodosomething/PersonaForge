@@ -1,16 +1,27 @@
 # Backend
 
-Planned Python + FastAPI service.
+Python + FastAPI service. **Phase 1 (foundation) is implemented:** normalized schemas,
+Messenger JSON parser, speaker selection, and the first import API.
 
-Suggested modules once implementation begins:
+## Run
+
+```bash
+cd backend
+python -m venv .venv            # Windows: .venv\Scripts\Activate.ps1
+pip install -e ".[dev]"
+uvicorn app.main:app --reload   # http://127.0.0.1:8000/docs
+pytest                          # runs ../tests
+```
+
+## Layout
 
 - `app/main.py` — FastAPI application entry point
-- `app/api/` — HTTP routes
-- `app/schemas/` — validated request and response models
-- `app/importers/messenger.py` — Messenger JSON parser
-- `app/services/profiling.py` — style analysis
-- `app/services/retrieval.py` — conversation retrieval
-- `app/services/chat.py` — persona chat orchestration
-- `tests/` — unit and integration tests
+- `app/api/imports.py` — `POST /api/imports`, `GET /api/imports/{id}/speakers`, `DELETE /api/imports/{id}`
+- `app/schemas/messages.py` — validated, source-agnostic message models
+- `app/importers/messenger.py` — Messenger JSON parser (repairs Meta's Latin-1/UTF-8 mojibake)
+- `app/services/speakers.py` — speaker listing and selection (only the selected speaker's text is used for profiling)
+- `app/store.py` — in-memory import store (nothing written to disk; deletable)
+- Planned: `services/profiling.py`, `services/retrieval.py`, `services/chat.py`
 
-Keep parsing and data-cleaning logic testable without starting the API server.
+Parsing and cleaning logic is testable without starting the API server.
+Import reports contain counts only, never raw message text.
